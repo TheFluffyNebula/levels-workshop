@@ -1,0 +1,9 @@
+Problems finalized: the noise problem’s statement and sample. Done once you confirm it.
+[] Solutions and stress test: the fast solutions and brute forces for all four, 1 to 2 days. Stop at a few thousand random cases passing plus the edge cases.
+[] Outline and script: one sentence per level, then the narration, 1 day.
+[] Feedback on the outline from 1 or 2 people, 1 day.
+[] Whiteboard visuals, 1 to 2 days.
+[] Practice run-through with a timer, half a day.
+[] Record and edit, 1 to 2 days.
+[] Final feedback pass, 1 day.
+[] Post: title, thumbnail, and a two-line summary, half a day.

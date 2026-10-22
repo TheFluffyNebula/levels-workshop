@@ -56,7 +56,7 @@ def main():
     gen = load(os.path.join(test_dir, "gen.py"), "level_gen")
     mod = load(os.path.join(test_dir, args.which + ".py"), "level_" + args.which)
 
-    print(f"test/{args.which}.py   (solve() only, n = m = size, {args.runs} runs each)")
+    print(f"test/{args.which}.py   (solve() only, input from gen.large(size), {args.runs} runs each)")
     print(f"{'size':>10} | {'mean':>10} | {'min':>10}")
     print("-" * 36)
 

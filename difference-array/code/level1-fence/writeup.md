@@ -109,7 +109,7 @@ approach: roughly 50,000 times fewer, and well inside the 10^8 budget even in Py
 ### How we know it's right
 
 A solution that is fast but wrong is worthless, so we compared it against the naive
-solution, which is slow but obviously correct, on [2000] random small inputs. The generator
+solution, which is slow but obviously correct, on 2000 random small inputs. The generator
 focuses on tiny n and m so that endpoints collide often, and also includes edge cases:
-a single painter, L = R, and every painter covering the whole fence. All [2000] matched.
+a single painter, L = R, and every painter covering the whole fence. All 2000 matched.
 

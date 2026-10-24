@@ -9,15 +9,6 @@ After that we can take the max of the array to get the most number of requests a
 
 Finally, we can use the peak request amount to get the number of servers needed. 
 
-Note: there are a few ways to do ceiling division. One is the `while` loop in the
-simple solution. Another is `math.ceil(mx / k)` in Python, which needs `import math` and
-divides as a float first. The most common is integer arithmetic: `(mx + k - 1) // k` in
-Python, or `(mx + k - 1) / k` in C++.
-
-It works because adding k - 1 pushes any remainder over the next multiple of k, but leaves an
-exact multiple where it is. For k = 2: mx = 4 gives (4 + 1) // 2 = 2, and mx = 5 gives
-(5 + 1) // 2 = 3.
-
 ```python
 n, k = map(int, input().split())
 busy = [0] * 101001
@@ -68,6 +59,15 @@ for i in range(len(req)):
 ans = (mx + k - 1) // k
 print(ans)
 ```
+
+Note: there are a few ways to do ceiling division. One is the `while` loop in the
+simple solution. Another is `math.ceil(mx / k)` in Python, which needs `import math` and
+divides as a float first. The most common is integer arithmetic: `(mx + k - 1) // k` in
+Python, or `(mx + k - 1) / k` in C++.
+
+It works because adding k - 1 pushes any remainder over the next multiple of k, but leaves an
+exact multiple where it is. For k = 2: mx = 4 gives (4 + 1) // 2 = 2, and mx = 5 gives
+(5 + 1) // 2 = 3.
 
 ### Complexity
 Each of the n intervals is processed in O(1). There is also a sweep over all times. 
